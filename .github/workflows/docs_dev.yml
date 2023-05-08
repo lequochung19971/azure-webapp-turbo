@@ -36,7 +36,7 @@ jobs:
             !.vscode
             !./apps/web
             !./node_modules
-            !./**/**/node_modules
+            !./**/**/test
 
   # deploy:
   #   runs-on: ubuntu-latest
