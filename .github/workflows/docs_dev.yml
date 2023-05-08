@@ -3,11 +3,7 @@ on:
   push:
     branches:
       - main
-    paths: |
-      ./apps/docs
-      .
-      !.vscode
-      !./apps/web
+    paths: ./apps/docs
   workflow_dispatch:
 
 jobs:
