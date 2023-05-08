@@ -3,8 +3,11 @@ on:
   push:
     branches:
       - main
-    paths:
-      - apps/web/**
+    paths: |
+      .
+      !.vscode
+      !./apps/docs
+
   workflow_dispatch:
 
 jobs:
@@ -21,11 +24,8 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          echo "TEST WEB DEV"
-        # run: |
-        #   npm install
-        #   npm run build --if-present
-        #   npm run test --if-present
+          npm install
+          npm run build:web
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
