@@ -57,5 +57,5 @@ jobs:
         with:
           app-name: 'docs-app-ws'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_dfe53bf92bad4d718de854677fcb1cdc }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_10622d754a9e42379fc4ae4173b89e74 }}
           package: .
