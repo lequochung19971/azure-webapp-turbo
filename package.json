@@ -8,7 +8,7 @@
     "build:docs": "npm run build -w docs",
     "start:web": "npm run start -w web",
     "start:docs": "npm run start -w docs",
-    "start": "npm run start -w docs",
+    "start": "npm run start -w web",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
