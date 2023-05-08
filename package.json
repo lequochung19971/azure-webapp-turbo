@@ -4,6 +4,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
+    "build:web": "npm run start -w web",
+    "build:docs": "npm run start -w docs",
     "start:web": "npm run start -w web",
     "start:docs": "npm run start -w docs",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
