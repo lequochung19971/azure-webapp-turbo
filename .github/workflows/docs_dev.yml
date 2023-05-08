@@ -55,7 +55,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'ecommerce-app-dev-2'
+          app-name: 'docs-app-ws'
           slot-name: 'production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_dfe53bf92bad4d718de854677fcb1cdc }}
           package: .
