@@ -9,7 +9,6 @@ on:
       - main
     paths:
       - '**'
-      - 'apps/docs/**'
       - '!apps/web/**'
   workflow_dispatch:
 
@@ -28,14 +27,15 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm run build --if-present
-          npm run test --if-present
+          npm run build:docs
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .
+          path: |
+            .
+            !./apps/web
 
   deploy:
     runs-on: ubuntu-latest
