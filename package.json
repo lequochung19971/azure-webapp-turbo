@@ -6,9 +6,9 @@
     "lint": "turbo run lint",
     "build:web": "npm run build -w web",
     "build:docs": "npm run build -w docs",
-    "start:web": "npm run start -w web",
-    "start:docs": "npm run start -w docs",
-    "start": "npm run start -w web",
+    "start:web": "node_modules/next/dist/bin/next start apps/web",
+    "start:docs": "node_modules/next/dist/bin/next start apps/docs",
+    "start": "node_modules/next/dist/bin/next start apps/docs",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
